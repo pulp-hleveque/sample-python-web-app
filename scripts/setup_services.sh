@@ -9,5 +9,5 @@ systemctl enable mywebapp.uwsgi.service
 cp /var/www/SampleApp/nginx-app.conf /etc/nginx/conf.d/nginx-app.conf
 mkdir -p /var/log/nginx
 chown nginx:nginx /var/log/nginx
-certbot run -n --nginx --agree-tos -d test.pulp.energy,test.pulp.energy -m hippolyte@pulp.energy  --redirect
+# certbot run -n --nginx --agree-tos -d test.pulp.energy,test.pulp.energy -m hippolyte@pulp.energy  --redirect
 systemctl enable nginx.service
